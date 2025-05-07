@@ -5,49 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vought International | Elite Alliance</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- THREE.JS CANVAS -->
   <canvas class="webgl-canvas"></canvas>
   
-  <!-- LOADING SCREEN (Professional Touch) -->
+  <!-- LOADING SCREEN -->
   <div class="loading-screen">
-    <div class="loading-bar"></div>
+    <div class="loading-bar-container">
+      <div class="loading-bar"></div>
+    </div>
     <div class="loading-text">INITIALIZING VOUGHT SYSTEMS</div>
+    <div class="loading-progress">0%</div>
   </div>
 
   <!-- MAIN CONTENT -->
   <div class="content">
     <!-- HERO SECTION -->
     <section class="hero">
+      <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1 class="hero-title">VOUGHT INTERNATIONAL</h1>
         <p class="hero-subtitle">WE PROTECT. YOU OBEY.</p>
         <div class="scroll-indicator">
           <div class="scroll-line"></div>
-          <span>SCROLL</span>
+          <span>SCROLL TO ENTER</span>
         </div>
       </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="section-header">
-        <h2>ELITE ALLIANCE NETWORK</h2>
+        <h2>ABOUT VOUGHT</h2>
         <div class="section-divider"></div>
       </div>
-      <!-- Content will be injected via JS -->
+      <div class="about-content">
+        <div class="about-text">
+          <p>Vought International is a strategic alliance built by veterans from top #15 alliances. We dominate through superior tactics and loyalty.</p>
+          <a href="#" class="cta-button">LEARN MORE</a>
+        </div>
+        <div class="about-image">
+          <div class="image-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP SECTION -->
+    <section class="leadership" id="leadership">
+      <div class="section-header">
+        <h2>THE SEVEN</h2>
+        <div class="section-divider"></div>
+        <p>Our elite leadership team</p>
+      </div>
+      <div class="leadership-grid">
+        <!-- Cards will be injected via JS -->
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+      <div class="section-header">
+        <h2>WHY JOIN VOUGHT?</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="features-grid">
+        <!-- Features will be injected via JS -->
+      </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+    <section class="join" id="join">
+      <div class="join-overlay"></div>
+      <div class="join-content">
+        <h2>READY TO JOIN THE ELITE?</h2>
+        <div class="join-buttons">
+          <a href="#" class="join-button discord">
+            <i class="fab fa-discord"></i> JOIN DISCORD
+          </a>
+          <a href="#" class="join-button pw">
+            <i class="fas fa-globe"></i> P&W PAGE
+          </a>
+        </div>
+      </div>
     </section>
   </div>
 
-  <!-- THREE.JS + GSAP LIBS -->
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">VOUGHT</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#features">Features</a>
+        <a href="#join">Join</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2025 Vought International. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  
-  <!-- MAIN SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
